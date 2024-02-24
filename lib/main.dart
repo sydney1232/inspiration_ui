@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               width: double.infinity,
@@ -81,6 +82,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           hintText: "Search you're looking for"),
                     ),
                   ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  Text(
+                    "Promo today",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(height: 10),
                 ],
               ),
             ),
