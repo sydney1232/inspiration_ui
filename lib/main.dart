@@ -89,6 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "Promo today",
@@ -99,11 +100,29 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   SizedBox(height: 10),
+                  Container(
+                    height: 200,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        promptCard(""),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget promptCard(image) {
+    return AspectRatio(
+      aspectRatio: 2 / 3,
+      child: Container(
+        decoration: BoxDecoration(color: Colors.orange),
       ),
     );
   }
