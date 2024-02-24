@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     "Inspiration",
                     style: TextStyle(color: Colors.black, fontSize: 40),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 20),
                   Container(
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
