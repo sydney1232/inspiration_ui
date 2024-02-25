@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
-                        promptCard(""),
+                        promptCard("assets/images/one.jpg"),
                       ],
                     ),
                   )
@@ -122,7 +122,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return AspectRatio(
       aspectRatio: 2 / 3,
       child: Container(
-        decoration: BoxDecoration(color: Colors.orange),
+        decoration: BoxDecoration(
+            color: Colors.orange,
+            borderRadius: BorderRadius.circular(20),
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage(image),
+            )),
       ),
     );
   }
