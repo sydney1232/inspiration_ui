@@ -106,6 +106,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
                         promptCard("assets/images/one.jpg"),
+                        promptCard("assets/images/two.jpg"),
+                        promptCard("assets/images/three.jpg"),
+                        promptCard("assets/images/four.jpg"),
                       ],
                     ),
                   )
@@ -122,6 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return AspectRatio(
       aspectRatio: 2 / 3,
       child: Container(
+        margin: EdgeInsets.only(right: 15),
         decoration: BoxDecoration(
           color: Colors.orange,
           borderRadius: BorderRadius.circular(20),
