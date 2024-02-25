@@ -153,6 +153,20 @@ class _MyHomePageState extends State<MyHomePage> {
                               Colors.black.withOpacity(0.1)
                             ]),
                       ),
+                      child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child: Padding(
+                          padding: EdgeInsets.all(15),
+                          child: Text(
+                            "Popular Now",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],
