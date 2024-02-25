@@ -107,11 +107,54 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: <Widget>[
                         promptCard("assets/images/one.jpg"),
                         promptCard("assets/images/two.jpg"),
-                        promptCard("assets/images/three.jpg"),
                         promptCard("assets/images/four.jpg"),
+                        promptCard("assets/images/three.jpg"),
                       ],
                     ),
-                  )
+                  ),
+                  Container(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        gradient: LinearGradient(
+                            begin: Alignment.bottomRight,
+                            stops: [
+                              0.2,
+                              0.9
+                            ],
+                            colors: [
+                              Colors.black.withOpacity(0.8),
+                              Colors.black.withOpacity(0.1)
+                            ]),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Container(
+                    height: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/images/three.jpg"),
+                      ),
+                    ),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        gradient: LinearGradient(
+                            begin: Alignment.bottomRight,
+                            stops: [
+                              0.2,
+                              0.9
+                            ],
+                            colors: [
+                              Colors.black.withOpacity(0.8),
+                              Colors.black.withOpacity(0.1)
+                            ]),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
